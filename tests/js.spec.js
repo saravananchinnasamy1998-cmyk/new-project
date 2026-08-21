@@ -11,6 +11,8 @@ test('verify Instagram URL', async ({ page }) => {
 
   await expect(page).toHaveURL('https://www.instagram.com/');
   await expect(page).toHaveTitle('Instagram');
+  await page.waitForTimeout(3000);
 
   console.log('Instagram URL and title verified');
-});
+
+}); 
